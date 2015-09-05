@@ -1,0 +1,52 @@
+Figwheel: focusing on build-ids (example)
+[0mCompiling "resources/public/js/example.js" from ["src/"]...
+[31mCompiling "resources/public/js/example.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:target/figwheel_temp/example/figwheel/connect.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__2630.invoke (compiler.cljc:1344)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1306)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1381)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure/fn (closure.clj:478)
+    cljs.closure$fn__2955$G__2950__2962.invoke (closure.clj:383)
+    cljs.closure/fn (closure.clj:492)
+    cljs.closure$fn__2955$G__2950__2962.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1674)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__11055.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__11101.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__11052.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__10855.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__10861.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__10861.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__10864.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__10858.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__10876.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__10962$state_machine__4735__auto____10963$fn__10968.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__10962$state_machine__4735__auto____10963.invoke (auto.clj:178)
+Figwheel: focusing on build-ids (ui)
+[0mCompiling "resources/public/js/example.js" from ["src/"]...
+[32mSuccessfully compiled "resources/public/js/example.js" in 0.162 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /devise_ui/core.js
+Figwheel: focusing on build-ids (ui)
+[0mCompiling "resources/public/js/devise_ui.js" from ["src/"]...
+[32mSuccessfully compiled "resources/public/js/devise_ui.js" in 0.129 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /devise_ui/core.js
+[0mCompiling "resources/public/js/devise_ui.js" from ["src/"]...
+[32mSuccessfully compiled "resources/public/js/devise_ui.js" in 0.088 seconds.[0m
+notifying browser that file changed:  /devise_ui/core.js
+[0mCompiling "resources/public/js/devise_ui.js" from ["src/"]...
+[32mSuccessfully compiled "resources/public/js/devise_ui.js" in 0.119 seconds.[0m
+notifying browser that file changed:  /devise_ui/core.js
