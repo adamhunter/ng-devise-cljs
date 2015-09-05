@@ -21,10 +21,12 @@
       (.configure (js-obj "apiUrl" "http://localhost:3000"))))
 
 (def.controller devise-ui.dashboard [$scope $filter $auth]
-  (-> $auth
-      (.submitLogin (js-obj "email" "adamhunter@me.com" "password" "foobar"))
-      (.then #(println "resp:" %))
-      (.catch #(println "error:" %)))
+  (set! (.-handleLogin $scope) 
+        (fn [login]
+          (-> $auth
+              (.submitLogin login)
+              (.then #(println "resp:" %))
+              (.catch #(println "error:" %)))))
   (set! (.-items $scope) "things")
   (.$watch $scope "person.name" (fn [newVal oldVal]
                                   (println (($filter "uppercase") newVal)))))

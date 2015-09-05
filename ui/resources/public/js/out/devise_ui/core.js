@@ -6,18 +6,18 @@ cljs.core.enable_console_print_BANG_.call(null);
 cljs.core.println.call(null,"Hello world!");
 devise_ui.core.devise_ui = angular.module("devise-ui",["ng-token-auth"]);
 angular.module("devise-ui").config(["$authProvider",(function ($authProvider){
-return $authProvider.configure((function (){var obj16766 = {"apiUrl":"http://localhost:3000"};
-return obj16766;
+return $authProvider.configure((function (){var obj16869 = {"apiUrl":"http://localhost:3000"};
+return obj16869;
 })());
 })]);
 devise_ui.core.devise_ui_dashboard = ["$scope","$filter","$auth",(function ($scope,$filter,$auth){
-$auth.submitLogin((function (){var obj16770 = {"email":"adamhunter@me.com","password":"foobar"};
-return obj16770;
-})()).then((function (p1__16767_SHARP_){
-return cljs.core.println.call(null,"resp:",p1__16767_SHARP_);
-})).catch((function (p1__16768_SHARP_){
-return cljs.core.println.call(null,"error:",p1__16768_SHARP_);
+$scope.handleLogin = (function (login){
+return $auth.submitLogin(login).then((function (p1__16870_SHARP_){
+return cljs.core.println.call(null,"resp:",p1__16870_SHARP_);
+})).catch((function (p1__16871_SHARP_){
+return cljs.core.println.call(null,"error:",p1__16871_SHARP_);
 }));
+});
 
 $scope.items = "things";
 
